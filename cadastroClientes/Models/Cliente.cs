@@ -8,6 +8,6 @@
         public string? CPF { get; set; }
         public string? Telefone { get; set; }
         public DateTime DatNascimento { get; set; }
-        public DateTime DatCadastro { get; set; }        
+        public DateTime DatCadastro { get; set; } = DateTime.Now;    
     }
 }
