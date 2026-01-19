@@ -1,6 +1,5 @@
 ﻿using cadastroClientes.Data;
 using cadastroClientes.Models;
-using cadastroClientes.Services;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -18,7 +17,7 @@ namespace cadastroClientes.Controllers
         {
             _context = context;
         }
-        
+
         public ActionResult CadastrarCliente(Cliente cliente)
         {
             try
@@ -32,7 +31,7 @@ namespace cadastroClientes.Controllers
             {
                 string excecao = ex.Message;
                 return Content("0");
-            }   
+            }
         }
     }
 }

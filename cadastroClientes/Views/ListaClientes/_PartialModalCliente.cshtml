@@ -1,0 +1,21 @@
+﻿@model Cliente
+
+<input type="hidden" id="Id" value="@Model.Id" />
+<p>Edite o cliente nos campos abaixo:</p>
+<div class="row">
+    <input id="Nome" value="@Model.Nome" />
+</div>
+<div class="row">
+    <input id="Email" value="@Model.Email" />
+</div>
+<div class="row">
+    <input id="CPF" value="@Model.CPF" />
+</div>
+<div class="row">
+    <input id="Telefone" value="@Model.Telefone" />
+</div>
+<div class="row">
+    <input type="date" id="DatNascimento" value="@Model.DatNascimento" />
+</div>
+
+<button type="button" onclick="SalvarEdicao()" class="btn btn-primary mt-5">Salvar</button>

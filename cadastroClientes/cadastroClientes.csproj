@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\listaClientes.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\listaClientes.js" />
     <None Include="wwwroot\js\cadastroCliente.js" />
   </ItemGroup>
 
